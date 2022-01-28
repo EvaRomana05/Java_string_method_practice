@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class solutions {
     public static void main(String arg[]) {
-        int number = 57;
-        int count = 0;
-        String msg = Integer.toString(number);
-        //  String msg = "56";
-        for (int i = 0; i < msg.length(); i++) {
-            char value = msg.charAt(i);
-            count += Character.getNumericValue(value);
-        }
-        System.out.println(count);
+//        int number = 57;
+//        int count = 0;
+//        String msg = Integer.toString(number);
+//        //  String msg = "56";
+//        for (int i = 0; i < msg.length(); i++) {
+//            char value = msg.charAt(i);
+//            count += Character.getNumericValue(value);
+//        }
+//        System.out.println(count);
 
 
         //        printName(); //1
@@ -31,18 +31,45 @@ public class solutions {
         //        emoji(); //16
         //        javaVersionCheck(); //31
         //compare(); //32
-        reverseString();
+      //  reverseString();
+
+        string();
     }
+
+    public static void string() {
+//  biswanath ghosh
+        // b i s
+
+        String str = "romana evaa";
+
+        int count = str.length(); // 0-10
+        for (int start = count; start > 0; start--) {
+            int position = start - 1;
+            char nowCharacter = str.charAt(position);
+            if (nowCharacter == 'a' || nowCharacter == 'e' || nowCharacter == 'i' || nowCharacter == 'o' || nowCharacter == 'u') {
+
+            } else {
+                System.out.print(nowCharacter);
+            }
+
+        }
+        System.out.println();
+    }
+
+
 
     public static void reverseString() {
 
         String str = "romana evaa";
 
-        // conversion from String object to StringBuffer
-        StringBuffer sbr = new StringBuffer(str);
-        // To reverse the string
-        sbr.reverse();
-        System.out.println(sbr);
+        int count = str.length(); // 0-10
+        for (int start = count;start>0;start--){
+            int position = start-1;
+            System.out.print(str.charAt(position));
+        }
+        System.out.println();
+
+
 
     }
 
